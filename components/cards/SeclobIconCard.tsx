@@ -1,6 +1,6 @@
 import React from 'react';
 interface IIconCard {
-	icon: React.ComponentType<{ className: string }>;
+	icon: React.ComponentType<any>;
 	text: string;
 }
 const SeclobIconCard = ({ icon: IconComponent, text }: IIconCard) => {

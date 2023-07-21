@@ -10,7 +10,7 @@ export interface CustomButtonProps {
 	handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
 export interface IIconCard {
-	icon: React.ComponentType<{ className: string }>;
+	icon: React.ComponentType<any>;
 	text: string;
 }
 export interface IServiceCard {

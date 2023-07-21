@@ -11,13 +11,9 @@ const HomeServices: React.FC<HomeServicesProps> = ({ title }) => {
 				<div className="flex justify-between items-center my-4">
 					<p className="text-app_blue">{title}</p>
 				</div>
-				<div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 max-w-[1000px] mx-auto"> 
+				<div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 max-w-[1000px] mx-auto">
 					{homeServices.map((service, index) => (
-						<HomeServiceCard
-							key={index}
-							text={service.name}
-							img={service.img}
-						/>
+						<HomeServiceCard key={index} text={service.name} />
 					))}
 				</div>
 			</div>

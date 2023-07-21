@@ -1,6 +1,9 @@
 import { IServiceCard } from '@/types';
 import React from 'react';
-const HomeServiceCard = ({ text, img }: IServiceCard) => {
+interface IHomeServiceCard{
+	 text:string
+ }
+const HomeServiceCard = ({ text }: IHomeServiceCard) => {
 	return (
 		<div
 			className="w-full h-60   rounded-3xl bg-cover bg-center "

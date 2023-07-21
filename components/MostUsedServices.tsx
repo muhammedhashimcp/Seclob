@@ -17,7 +17,7 @@ const MostUsedServices = () => {
 							<MostUsedCard
 								key={index}
 								text={service.name}
-								icon={service.icon}
+								icon={service.icon} 
 							/>
 						))}
 					</div>
