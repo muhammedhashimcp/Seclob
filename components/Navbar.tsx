@@ -24,21 +24,21 @@ const NavBar = () => {
 		<>
 			<header className="w-full top-0  fixed z-10 h-12  bg-navbar-bg">
 				{/* Mobile menu button*/}
-				<div className="absolute inset-y-0 py-4 px-4  left-0 flex items-center sm:hidden">
+				<div className="absolute inset-y-0   left-0 flex items-center sm:hidden">
 					<div className="" onClick={toggleMenu}>
 						<Menu as="div" className="relative ">
-							<div className="">
+							<div className=" w-full">
 								{isMenuOpen ? (
 									<Menu.Button>
 										<XMarkIcon
-											className="block h-6 w-6 text-gray-600"
+											className="block h-6 w-6 text-gray-600 m-4"
 											aria-hidden="true"
 										/>
 									</Menu.Button>
 								) : (
 									<Menu.Button>
 										<Bars3Icon
-											className="block h-6 w-6 text-gray-600 "
+											className="block h-6 w-6 text-gray-600 m-4"
 											aria-hidden="true"
 										/>
 									</Menu.Button>
@@ -53,7 +53,7 @@ const NavBar = () => {
 								leaveFrom="transform opacity-100 scale-100"
 								leaveTo="transform opacity-0 scale-95"
 							>
-								<Menu.Items className="absolute px-10 mx-2 z-10  w-96 origin-top-left rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+								<Menu.Items className="absolute px-4   z-10  w-80 origin-top-left rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
 									{mobileNavLinks.map((nav) => (
 										<Menu.Item key={nav.name}>
 											{({ active }) => (
@@ -74,6 +74,15 @@ const NavBar = () => {
 								</Menu.Items>
 							</Transition>
 						</Menu>
+					</div>
+					<div className="  ">
+						<Image
+							className="h-8 w-auto mx-auto"
+							src="/seclob-logo.png"
+							alt="Your Company"
+							width={100}
+							height={18}
+						/>
 					</div>
 				</div>
 				<nav className="hidden max-w-[1440px]  mx-auto sm:flex justify-evenly items-center  py-4 bg-navbar-bg">
