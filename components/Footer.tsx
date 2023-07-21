@@ -20,7 +20,7 @@ const Footer = () => (
 		</div>
 		<div className="bg-app-medium-gray flex justify-center items-center flex-wrap  mt-10  py-4 px-2 sm:px-auto ">
 			<div className="">
-				<Link href="/" className="text-gray-500 ">
+				<Link href="/" className="text-white ">
 					<p className="text-justify">
 						Copyright 2022 Seclob Technologies Pvt.Ltd. All Rights
 						Reserved | Designed & Developed by ERE Business

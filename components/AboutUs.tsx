@@ -6,13 +6,13 @@ const AboutUs = () => {
 	return (
 		<div className="w-full ">
 			<div className=" max-w-[1000px] mx-2 lg:mx-auto ">
-				<div className=" max-w-[1000px]  flex flex-wrap justify-center">
+				<div className=" max-w-[1000px]  flex flex-wrap justify-between">
 					{/* <div className="aboutus max-w-[1000px]  grid grid-cols-3 sm:grid-cols-5 md:grid-cols-9 mx-auto"> */}
 					{AboutUsNavs.map((item) => (
 						<Link
 							key={item.title}
 							href={item.url}
-							className="item text-gray-600   "
+							className="item text-gray-400   "
 						>
 							<p className=" px-2 border-x-1 font-semibold border-black">
 								{item.title}
