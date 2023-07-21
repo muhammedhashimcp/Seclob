@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeServiceCard from './HomeServiceCard';
+import HomeServiceCard from './cards/HomeServiceCard';
 import { homeServices } from '@/constants';
 interface HomeServicesProps {
 	title: string;

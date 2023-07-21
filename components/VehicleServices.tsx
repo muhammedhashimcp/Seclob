@@ -1,6 +1,7 @@
 import { vehicleServices } from '@/constants';
 import React from 'react';
-import ServiceCard from './ServiceCard';
+import ServiceCard from './cards/ServiceCard';
+
 
 const VehicleServices = () => {
 	return (

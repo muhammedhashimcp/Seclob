@@ -1,11 +1,12 @@
 import React from 'react';
 import { whySeclobData } from '@/constants';
-import SeclobIconCard from './SeclobIconCard';
+import SeclobIconCard from './cards/SeclobIconCard';
+
 
 const WhySeclob = () => {
 	return (
 		<div className="h-screen flex-1 my-8   w-full bg-app-light-gray ">
-			<div className="max-w-[1000px] mx-2 sm:px-auto ">
+			<div className="max-w-[1000px] mx-2 lg:mx-auto ">
 				<div className="flex justify-between items-center my-4">
 					<p className="text-app-dark-blue">Why Seclob?</p>
 				</div>
@@ -13,7 +14,7 @@ const WhySeclob = () => {
 					{whySeclobData.map((service, index) => (
 						<SeclobIconCard
 							key={index}
-							text={service.name}
+						text={service.name} 
 							icon={service.icon}
 						/>
 					))}

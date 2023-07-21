@@ -1,6 +1,7 @@
 import React from 'react';
 import { IStoreComp } from '@/types';
-import StoreCard from './StoreCard';
+import StoreCard from './cards/StoreCard';
+
 
 const StoreComp = ({ title, data }: IStoreComp) => {
 	return (

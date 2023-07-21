@@ -14,7 +14,7 @@ const AboutUs = () => {
 							href={item.url}
 							className="item text-gray-600   "
 						>
-							<p className=" px-2 border-x-1  border-black">
+							<p className=" px-2 border-x-1 font-semibold border-black">
 								{item.title}
 							</p>
 						</Link>

@@ -1,6 +1,7 @@
 import React from 'react';
-import IconCard from './IconCard';
+
 import { services } from '@/constants';
+import IconCard from './cards/IconCard';
 
 const Services = () => {
 	return (
