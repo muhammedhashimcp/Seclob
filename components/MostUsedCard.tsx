@@ -15,9 +15,8 @@ const MostUsedCard = ({ text, icon: IconComponent }: IIconCard) => {
 						{text}
 					</p>
 					<p className="text-[8px] text-gray  font-semibold text-gray">
-						Seclob Service <br/> at Kochi
+						Seclob Service <br /> at Kochi
 					</p>
-				
 				</div>
 			</div>
 			<div className="text-center py-1 bg-app_green rounded-b-xl bottom-0">

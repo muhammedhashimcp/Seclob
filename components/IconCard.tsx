@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 interface IIconCard {
-	icon: React.ComponentType<{ className: string }>,
+	icon: React.ComponentType<{ className: string }>;
 	text: string;
 }
 const IconCard = ({ icon: IconComponent, text }: IIconCard) => {
@@ -18,4 +18,4 @@ const IconCard = ({ icon: IconComponent, text }: IIconCard) => {
 	);
 };
 
-export default IconCard
+export default IconCard;

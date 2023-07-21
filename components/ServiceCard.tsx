@@ -1,5 +1,5 @@
 import { IIconCard } from '@/types';
-import React from 'react'
+import React from 'react';
 
 const ServiceCard = ({ text, icon: IconComponent }: IIconCard) => {
 	return (
@@ -16,4 +16,4 @@ const ServiceCard = ({ text, icon: IconComponent }: IIconCard) => {
 	);
 };
 
-export default ServiceCard
+export default ServiceCard;

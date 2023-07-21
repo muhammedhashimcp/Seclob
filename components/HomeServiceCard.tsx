@@ -1,10 +1,5 @@
 import { IServiceCard } from '@/types';
-import Image from 'next/image';
 import React from 'react';
-// const cardStyle = {
-// 	backgroundImage: `url('/background.png')`,
-// };
-
 const HomeServiceCard = ({ text, img }: IServiceCard) => {
 	return (
 		<div
@@ -13,7 +8,9 @@ const HomeServiceCard = ({ text, img }: IServiceCard) => {
 		>
 			<div className="flex-1 h-full  rounded-3xl flex items-center justify-center bg-gradient-to-b from-transparent to-light-white-100">
 				<div className="mt-auto  ">
-					<p className="text-sm  font-semibold text-gray my-2 text-gray ">{text}</p>
+					<p className="text-sm  font-semibold text-gray my-2 text-gray ">
+						{text}
+					</p>
 				</div>
 			</div>
 		</div>

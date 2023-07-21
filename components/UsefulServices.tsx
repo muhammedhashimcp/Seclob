@@ -4,7 +4,7 @@ import React from 'react';
 const UsefulServices = () => {
 	return (
 		<div className="w-full ">
-			<div className=" max-w-[1000px] mx-auto">
+			<div className=" max-w-[1000px] mx-2 lg:mx-auto">
 				<div className=" ">
 					<p className="text-gray-600 text-md font-bold ">
 						Some of our services that will prove useful to you on a
@@ -12,7 +12,7 @@ const UsefulServices = () => {
 					</p>
 				</div>
 
-				<div className="grid grid-cols-4 gap-6 mt-4 ">
+				<div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 mx-2 sm:mx-0 ">
 					{usefullServices.map(
 						({ icon: IconComponent, title, text }) => (
 							<div

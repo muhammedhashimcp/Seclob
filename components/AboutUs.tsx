@@ -5,21 +5,24 @@ import React from 'react';
 const AboutUs = () => {
 	return (
 		<div className="w-full ">
-			<div className=" max-w-[1000px] mx-auto">
-				<div className="aboutus max-w-[1000px] flex justify-around mx-auto">
+			<div className=" max-w-[1000px] mx-2 lg:mx-auto ">
+				<div className=" max-w-[1000px]  flex flex-wrap justify-center">
+					{/* <div className="aboutus max-w-[1000px]  grid grid-cols-3 sm:grid-cols-5 md:grid-cols-9 mx-auto"> */}
 					{AboutUsNavs.map((item) => (
 						<Link
 							key={item.title}
 							href={item.url}
-							className="item text-gray-600  space-x-4  "
+							className="item text-gray-600   "
 						>
-							{item.title}
+							<p className=" px-2 border-x-1  border-black">
+								{item.title}
+							</p>
 						</Link>
 					))}
 				</div>
 				<div className="my-2 py-2">
 					<p className="text-sm text-gray-600  text-justify ">
-						Welcome to Justdial, your 'one stop shop' where you are
+						Welcome to Justdial, your &apos;one stop shop&apos; where you are
 						assisted with day-to-day and exclusive planning and
 						purchasing activities. We take pride in our iconic
 						customer support number, 8888888888 and the fact that we
@@ -41,12 +44,12 @@ const AboutUs = () => {
 						too.
 					</p>
 					<p className="text-sm  text-gray-600 py-2 text-justify leading-6">
-						Our 'Free Listing' feature gives a platform to showcase
+						Our &apos;Free Listing&apos; feature gives a platform to showcase
 						varied specialities. We then furnish you with the
 						information via phone, SMS, web, App and WAP as well as,
 						create a space for you to share your experiences through
-						our 'Rate & Review' feature. Through the 'Best Deals',
-						'Last Minute Deals' and 'Live Quotes', we make sure that
+						our &apos;Rate & Review&apos; feature. Through the &apos;Best Deals&apos;,
+						&apos;Last Minute Deals&apos; and &apos;Live Quotes&apos;, we make sure that
 						you are offered the best bargains in the market.
 					</p>
 				</div>
